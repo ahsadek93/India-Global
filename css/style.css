@@ -57,4 +57,12 @@
     background-color: #f79210 !important;
     color: black; }
 
+.navbar {
+  z-index: 1000; }
+
+.nav-link {
+  color: white !important; }
+  .nav-link:hover, .nav-link:focus {
+    color: #f79210 !important; }
+
 /*# sourceMappingURL=style.css.map */
