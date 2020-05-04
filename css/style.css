@@ -6,8 +6,8 @@
 
 .slider-img {
   object-fit: cover;
-  height: 100vh;
-  width: 100vw; }
+  height: 100vh !important;
+  width: 100vw !important; }
 
 .carousel-caption {
   background: rgba(0, 0, 0, 0.49);
