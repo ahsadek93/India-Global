@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/style.css"">
     </head>
     <body>
-        <!--[if lt IE 7]>
+    <!--[if lt IE 7]>
             <p class=" browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your
         browser</a> to improve your experience.</p>
     <![endif]-->
@@ -27,12 +27,12 @@
             <div class="carousel-item active">
                 <img src="https://images.pexels.com/photos/256112/pexels-photo-256112.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                     alt="slide-1" class="d-block w-100 slider-img">
-                    <div class="carousel-caption text-white text-left px-5">
-                        <h2 class="wow fadeInRight">Showcase your thought leadership</h2>
-                        <h2 class="wow fadeInRight"> in Deep Tech</h2>
-                        <p>India's largest & exclusive platform connecting top innovators in Deep Tech community</p>
-                        <button class="btn btn-primary"> Partner with us</button>
-                    </div>
+                <div class="carousel-caption text-white text-left px-5">
+                    <h2 class="wow fadeInRight">Showcase your thought leadership</h2>
+                    <h2 class="wow fadeInRight"> in Deep Tech</h2>
+                    <p>India's largest & exclusive platform connecting top innovators in Deep Tech community</p>
+                    <button class="btn btn-primary"> Partner with us</button>
+                </div>
             </div>
 
             <!--
@@ -61,26 +61,56 @@
     </div>
 
     <div class="container">
-        <nav class="navbar navbar-expand-lg  fixed-top " id="topNav">
+        <nav class="navbar navbar-expand-md col-12 fixed-top " id="topNav">
             <div class="nav-brand col-5 col-lg-2 p-0 ">
                 <img src="./assets/logo-sm.png" alt="logo" class="img-fluid">
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon text-white"><i class="fas fa-bars align-middle"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a href="#" class="nav-link h6 text-white">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link h6 text-white">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link h6 text-white">Why us</a></li>
-                <li class="nav-item"><a href="#" class="nav-link h6 text-white">What we do</a></li>
-                <li class="nav-item"><a href="#" class="nav-link h6 text-white">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link h6 text-white mr-5">Contact us</a></li>
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white"><i class="fas fa-bars align-middle"></i></span>
+            </button>
+            <div class="collapse navbar-collapse bg-md-primary" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item px-5 py-0 border-right border-primary"><a href="#" class="nav-link h6 text-white">Event Details</a></li>
+                    <li class="nav-item px-5 py-0 border-right border-primary"><a href="#" class="nav-link h6 text-white">Recent Events</a></li>
+                    <li class="nav-item px-5 py-0"><a href="#" class="nav-link h6 text-white">Partner with us</a></li>
 
-            </ul>
-        </div>
+                </ul>
+            </div>
         </nav>
+        <section class="page text-center slider-margin py-5" id="section_about">
+            <h1 class="text-primary wow fadeInDown">About</h1>
+            <p class="text-padding wow fadeInDown ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati,
+                est!
+                Exercitationem
+                dolores, ut
+                nemo,
+                recusandae unde sunt sed modi nam quibusdam, culpa facere consequuntur alias!</p>
+            <div class="row py-5">
+                <div class="col-12 col-lg-6">
+                    <div class="row">
+                        <img src="https://webthemez.com/demo/digi-school-html-website-template/images/features.png"
+                            alt="about-pic" class="img-fluid wow fadeInDown">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 text-left wow fadeInDown">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident sint tempore magnam eligendi,
+                        odio fuga sequi suscipit excepturi facere unde eaque esse optio numquam impedit quam debitis
+                        maiores asperiores eos cumque aperiam placeat labore explicabo. Veniam delectus saepe iusto esse
+                        qui, doloremque eius non exercitationem nulla quo ea. Consequuntur nisi iste, similique velit
+                        error cum fugiat accusantium quis officiis nostrum?</p>
+                    <h6 class="text-dark">Skill Central</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam iusto, natus est ducimus saepe
+                        laborum</p>
+                    <h6 class="text-dark">Active Central</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam iusto, natus est ducimus saepe
+                        laborum Lorem ipsum dolor sit amet.</p>
+                    <h6 class="text-dark">Growth Central</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam iusto, natus est ducimus saepe
+                        laborum Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </section>
     </div>
 
 
@@ -92,13 +122,18 @@
 
 
 
-
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="./js/app.js"></script>
-        
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
         particlesJS.load('particles-js', 'assets/particles.json', function () {
@@ -106,4 +141,5 @@
         });
     </script>
     </body>
+
 </html>

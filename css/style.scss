@@ -1,5 +1,12 @@
 $color-primary: #f79210;
+$color-primary-light: #ffc34b;
 $enable-responsive-font-sizes: true !important;
+
+
+.bg-primary-light {
+    background-color: $color-primary-light !important;
+}
+
 
 .text-primary {
     color: $color-primary !important;
@@ -95,4 +102,32 @@ $enable-responsive-font-sizes: true !important;
     &:focus {
         color: $color-primary !important;
     }
+}
+
+.border-primary {
+    border-color: $color-primary !important;
+}
+
+
+@media (max-width: 767px) {
+    .bg-md-primary {
+        background-color: $color-primary;
+    }
+
+
+    .nav-link {
+        color: white !important;
+
+        &:hover,
+        &:focus {
+            color: white !important;
+        }
+    }
+}
+
+
+.carousel-home {
+    position: absolute;
+    top: 0;
+    left: 0;
 }

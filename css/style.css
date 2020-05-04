@@ -1,3 +1,6 @@
+.bg-primary-light {
+  background-color: #ffc34b !important; }
+
 .text-primary {
   color: #f79210 !important; }
 
@@ -64,5 +67,21 @@
   color: white !important; }
   .nav-link:hover, .nav-link:focus {
     color: #f79210 !important; }
+
+.border-primary {
+  border-color: #f79210 !important; }
+
+@media (max-width: 767px) {
+  .bg-md-primary {
+    background-color: #f79210; }
+
+  .nav-link {
+    color: white !important; }
+    .nav-link:hover, .nav-link:focus {
+      color: white !important; } }
+.carousel-home {
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 /*# sourceMappingURL=style.css.map */
