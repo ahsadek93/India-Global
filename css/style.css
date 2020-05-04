@@ -54,6 +54,7 @@
   padding: 10px 30px;
   margin-top: 10px; }
   .btn-primary:hover, .btn-primary:focus {
-    background-color: #f79210 !important; }
+    background-color: #f79210 !important;
+    color: black; }
 
 /*# sourceMappingURL=style.css.map */
