@@ -1,4 +1,5 @@
 $color-primary: #f79210;
+$enable-responsive-font-sizes: true !important;
 
 .text-primary {
     color: $color-primary !important;
@@ -40,6 +41,20 @@ $color-primary: #f79210;
     width: 100%;
     right: 0;
     left: 0;
+    top: 20%;
+    z-index: 1000;
+
+}
+
+
+@media (min-width: 500px) {
+    .carousel-caption {
+        width: 100%;
+        right: 0;
+        left: 0;
+        top: 50%;
+        z-index: 1000;
+    }
 }
 
 .slider-margin {
@@ -48,7 +63,22 @@ $color-primary: #f79210;
 
 #particles-js {
     position: absolute;
-    z-index: 10000;
+    z-index: 100;
     width: 100vw;
     height: 100vh;
+}
+
+
+.btn-primary {
+    border: 1px solid black !important;
+    background-color: white;
+    color: black;
+    padding: 10px 30px;
+    margin-top: 10px;
+
+    &:hover,
+    &:focus {
+
+        background-color: $color-primary !important;
+    }
 }
