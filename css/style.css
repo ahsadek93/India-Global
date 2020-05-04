@@ -24,4 +24,7 @@
   width: 100vw;
   height: 70vh; }
 
+.bg-transparnt {
+  background-color: rgba(1, 1, 1, 0.2); }
+
 /*# sourceMappingURL=style.css.map */
