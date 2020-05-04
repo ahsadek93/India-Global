@@ -8,7 +8,7 @@
 
 .slider-img {
     object-fit: cover;
-    height: 100vh !important;
+    height: 70vh !important;
     width: 100vw !important;
 }
 
@@ -20,12 +20,12 @@
 }
 
 .slider-margin {
-    margin-top: 100vh;
+    margin-top: 70vh;
 }
 
 #particles-js {
     position: absolute;
     z-index: 10000;
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
 }
