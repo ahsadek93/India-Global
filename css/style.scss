@@ -1,0 +1,31 @@
+/* Slider */
+
+.carousel-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slider-img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.49);
+    width: 100%;
+    right: 0;
+    left: 0;
+}
+
+.slider-margin {
+    margin-top: 100vh;
+}
+
+#particles-js {
+    position: absolute;
+    z-index: 10000;
+    width: 100vw;
+    height: 100vh;
+}
