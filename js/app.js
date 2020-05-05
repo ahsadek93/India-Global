@@ -31,6 +31,8 @@ var swiper = new Swiper('.swiper-container', {
     loop: true,
     loopFillGroupWithBlank: false,
     autoplay: true,
+    mode: 'horizontal',
+    freeMode: true,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
