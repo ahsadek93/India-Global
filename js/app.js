@@ -26,15 +26,16 @@ var p = new Vue({
 });
 
 
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 'auto',
-    loop: true,
-    loopFillGroupWithBlank: false,
-    autoplay: true,
-    mode: 'horizontal',
-    freeMode: true,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-});
+
+$('.slider-wrapper').each(function () {
+    $(this).slick({
+        autoplay: true,
+        autoplaySpeed: 7000,
+        arrows: false,
+        fade: true,
+        speed: Math.round(Math.random() * 5000) + 2000,
+        infinite: true,
+        cssEase: 'ease-in-out',
+        loop: true
+    })
+})
