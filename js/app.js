@@ -24,3 +24,15 @@ var p = new Vue({
     }
 
 });
+
+
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    loop: true,
+    loopFillGroupWithBlank: false,
+    autoplay: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
