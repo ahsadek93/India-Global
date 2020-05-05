@@ -96,6 +96,10 @@ body {
   height: 30vw;
   object-fit: cover;
   object-position: top; }
+  .card-img-top:hover {
+    transform: scale(1.02);
+    transition: all 1s;
+    overflow: hidden; }
 
 @media (max-width: 767px) {
   .card-img-top {
@@ -112,16 +116,5 @@ body {
   bottom: 10px;
   color: white;
   background-color: rgba(0, 0, 0, 0.6); }
-
-.slick-list,
-.slick-track {
-  width: 100%;
-  height: 30vw; }
-
-@media (max-width: 767px) {
-  .slick-list,
-  .slick-track {
-    width: 100%;
-    height: 80vw; } }
 
 /*# sourceMappingURL=style.css.map */
