@@ -116,37 +116,85 @@
 
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid container-colored">
         <div class="container">
             <section class="row py-5 border-bottom border-muted" id="section-team">
                 <h2 class="text-primary pb-5 pt-3">What will it cover</h2>
                 <div class="col-12"></div>
-
-                <div class="col-12 col-md-3 p-2 my-2 border border-muted">
-                    <img src="./assets/01.JPEG" class="img-fluid card-img-top">
-                    <div class="text-wrapper p-2">
-                        <h4>Derick Jose & Krishnan Raman </h4>
-                        <!--
-                           <h6 class="text-primary">Co-founders of industrial AI startup Flutura</h6>
-                       -->
+                <template v-for="member in memberList">
+                    <a data-toggle="modal" v-bind:data-target="'#' + member.id"
+                        class="col-12 col-md-3 p-2 my-2 border border-muted pointer">
+                        <img v-bind:src="member.url" class="img-fluid card-img-top">
+                        <div class="text-wrapper p-2">
+                            <h4>{{member.name}} </h4>
+                            <!--
+           <h6 class="text-primary">Co-founders of industrial AI startup Flutura</h6>
+       -->
+                        </div>
+                    </a>
+                    <!-- Modal -->
+                    <div class="modal fade" v-bind:id="member.id" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="modal-title" :id="member.id + 'Label'">
+                                        <h5>{{member.name}} </h5>
+                                        <h6 class="text-primary">{{member.title}}</h6>
+                                    </div>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img :src="member.url" class="img-fluid">
+                                            </div>
+                                            <div class="col-6 text-center">
+                                                <div class="row justify-content-center h-100">
+                                                    <div class="col-12 align-self-center">
+                                                        <h5>{{member.text}}</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </template>
+
+
+
+
+
+
+
+
+                <!--
+    
+
+
+
                 <div class="col-12 col-md-3 p-2 my-2 border border-muted">
                     <img src="./assets/02.jpg" class="img-fluid card-img-top">
                     <div class="text-wrapper p-2">
                         <h4>Chintan </h4>
-                        <!--
+                        
                         <h6 class="text-primary">CXOBridge</h6>
-                        -->
+                       
                     </div>
                 </div>
                 <div class="col-12 col-md-3 p-2 my-2 border border-muted">
                     <img src="./assets/03.jpg" class="img-fluid card-img-top">
                     <div class="text-wrapper p-2">
                         <h4>Arvind Lakshmikumar </h4>
-                        <!--
+                        
                         <h6 class="text-primary">Co-founder of computer vision startup Tonbo</h6>
-                        -->
+                        
                     </div>
                 </div>
 
@@ -154,28 +202,28 @@
                     <img src="./assets/04.jpg" class="img-fluid card-img-top">
                     <div class="text-wrapper p-2">
                         <h4>Balaji Viswanathan</h4>
-                        <!--
+                        
                         <h6 class="text-primary">Co-founder of Invento Robotics, maker of Mitra humanoids</h6>
-                        -->
+                       
                     </div>
                 </div>
                 <div class="col-12 col-md-3 p-2 my-2 border border-muted">
                     <img src="./assets/05.JPEG" class="img-fluid card-img-top">
                     <div class="text-wrapper p-2">
                         <h4>Ben Matthias and Naganand Doraswamy </h4>
-                        <!--
+                       
                         <h6 class="text-primary">Managing partner of Vertex Ventures - Founder, Ideaspring Capital</h6>
-                        -->
+                      
                     </div>
                 </div>
                 <div class="col-12 col-md-3 p-2 my-2 border border-muted ">
                     <img src="./assets/06.jpg" class="img-fluid card-img-top">
                     <div class="text-wrapper p-2">
                         <h4>Aruna Schwarz</h4>
-                        <!--
+                     
                        
                         <h6 class="text-primary">Co-founder of Stelae Technologies</h6>
-                        -->
+                      
                     </div>
                 </div>
 
@@ -183,29 +231,29 @@
                     <img src="./assets/07.jpg" class="img-fluid card-img-top">
                     <div class="text-wrapper p-2">
                         <h4>Martin Olausson</h4>
-                        <!--
+                        
                         <h6 class="text-primary">ABB VP for global startup business development</h6>
-                        -->
+                      
                     </div>
                 </div>
                 <div class="col-12 col-md-3 p-2 my-2 border border-muted ">
                     <img src="./assets/08.JPG" class="img-fluid card-img-top">
                     <div class="text-wrapper p-2">
                         <h4>Madhurima Agarwal </h4>
-                        <!--
+                       
                         <h6 class="text-primary">Head of Netapp accelerator</h6>
-                        -->
+                       
                     </div>
                 </div>
                 <div class="col-12 col-md-3 p-2 my-2 border border-muted">
                     <img src="./assets/9. Madhurima Agarwal-scaled.JPG" class="img-fluid card-img-top">
                     <div class="text-wrapper p-2">
                         <h4>Shridhar Marri, Satish Medapati, and Raghu Ravinutala </h4>
-                        <!--
+                     
                         <h6 class="text-primary">Co-founder, Senseforth - Co-founder, Intentico - CEO and co-founder of
                             Yellow Messenger </h6>
                     
-                        -->
+                        
                     </div>
                 </div>
 
@@ -213,31 +261,31 @@
                     <img src="./assets/10.jpg" class="img-fluid card-img-top">
                     <div class="text-wrapper p-2">
                         <h4>Harshwardhan Kumar and Josef Seuss </h4>
-                        <!--
+                        
                         <h6 class="text-primary">Co-founders of BlinkIn</h6>
-                        -->
+                        
                     </div>
                 </div>
                 <div class="col-12 col-md-3 p-2 my-2 border border-muted ">
                     <img src="./assets/11.JPG" class="img-fluid card-img-top">
                     <div class="text-wrapper p-2">
                         <h4>Saurabh Chandra </h4>
-                        <!--
+                       
                         <h6 class="text-primary">Co-founder, Ati Motors</h6>
-                        -->
+                      
                     </div>
                 </div>
                 <div class="col-12 col-md-3 p-2 my-2 border border-muted ">
                     <img src="./assets/12.jpg" class="img-fluid card-img-top">
                     <div class="text-wrapper p-2">
                         <h4>Lev Mass</h4>
-                        <!--
+                        
                         <h6 class="text-primary">California-based serial entrepreneur, investor and mentor</h6>
                    
-                        -->
+                      
                     </div>
                 </div>
-
+            -->
                 <div class="col-12">
                     <button class="btn btn-primary-filled"> Download Details</button>
 
