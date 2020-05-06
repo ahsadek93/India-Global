@@ -32,7 +32,7 @@ $(document).ready(function () {
     $('.slider-wrapper').each(function () {
         $(this).slick({
             autoplay: true,
-            autoplaySpeed: 7000,
+            autoplaySpeed: 10000,
             arrows: false,
             fade: true,
             speed: Math.round(Math.random() * 5000) + 2000,
