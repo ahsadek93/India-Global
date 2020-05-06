@@ -20,7 +20,6 @@
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
 </head>
 
 <body>
@@ -33,7 +32,8 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="carousel-caption text-white text-left px-5">
-                    <h1 class="wow fadeInRight">Mint India – Global Deep Tech innovation</h1>
+                    <h1 class="wow fadeInRight display-2">Mint India</h1>
+                    <h1 class="wow fadeInRight display-3">Global Deep Tech Conclave</h1>
                     <h5>India's exclusive digital platform shaping Deep Tech community’s ideas relevant in post COVID
                         era
                     </h5>
@@ -76,7 +76,7 @@
                     <div class="col-12 col-md-4">
                         <div class="row">
                             <div class="col-3 text-primary">
-                                <i class="far fa-4x fa-handshake"></i>
+                                <i class="far fa-3x fa-handshake"></i>
                             </div>
                             <div class="col">
                                 <h4>Meet your target audience</h4>
@@ -90,7 +90,7 @@
                     <div class="col-12 col-md-4">
                         <div class="row">
                             <div class="col-3 text-primary">
-                                <i class="fas fa-4x fa-chart-line"></i>
+                                <i class="fas fa-3x fa-chart-line"></i>
                             </div>
                             <div class="col">
                                 <h4>Raise credibility</h4>
@@ -103,7 +103,7 @@
                     <div class="col-12 col-md-4">
                         <div class="row">
                             <div class="col-3 text-primary">
-                                <i class="fas fa-4x fa-user-check"></i>
+                                <i class="fas fa-3x fa-user-check"></i>
                             </div>
                             <div class="col">
                                 <h4>Amplify your brand presence</h4>
@@ -123,7 +123,14 @@
     <div class="container-fluid container-colored">
         <div class="container">
             <section class="row py-5 border-bottom border-muted" id="section-team">
-                <h2 class="text-primary pb-5 pt-3">What will it cover</h2>
+                <div class="col-12 row">
+                    <span class="text-primary pb-5 pt-3 align-self-center">
+                        <h2 class="d-inline">Who talks about what</h2>
+                    </span>
+                    <span class="ml-auto text-primary pb-5 pt3 align-self-center"><i class="far fa-calendar-alt"></i>
+                        4th - 6th June
+                        2020 - <i class="fas fa-map-marker-alt"></i></span>
+                </div>
                 <div class="col-12"></div>
                 <template v-for="member in memberList">
                     <a data-toggle="modal" v-bind:data-target="'#' + member.id"
@@ -131,6 +138,7 @@
                         <img v-bind:src="member.url" class="img-fluid card-img-top">
                         <div class="text-wrapper p-2">
                             <h4>{{member.name}} </h4>
+                            <h6 class="text-primary">{{member.title}}</h6>
                             <!--
            <h6 class="text-primary">Co-founders of industrial AI startup Flutura</h6>
        -->
@@ -154,11 +162,14 @@
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-6">
-                                                <img :src="member.url" class="img-fluid">
+                                                <img :src="member.url" class="img-fluid card-img-top"
+                                                    v-bind:class="{'card-img-top-fill' : !member.soloPic}">
                                             </div>
                                             <div class="col-6 text-center">
                                                 <div class="row justify-content-center h-100">
                                                     <div class="col-12 align-self-center">
+                                                        <h4 class="text-center text-primary py-1">Topic of discussion
+                                                        </h4>
                                                         <h5>{{member.text}}</h5>
                                                     </div>
                                                 </div>
@@ -172,7 +183,8 @@
                 </template>
 
                 <div class="col-12">
-                    <button class="btn btn-primary-filled"> Download Details</button>
+                    <button class="btn btn-primary-filled"> Download Event Details
+                    </button>
 
                 </div>
 
@@ -185,27 +197,31 @@
 
     <div class="container">
         <section class="row py-5 border-bottom border-muted" id="section-videos">
-            <h2 class="text-primary pb-5 pt-3">Sneak peak into our past events</h2>
+            <h2 class="text-primary pb-5 pt-3">Our recent events </h2>
             <div class="col-12"></div>
             <div class="col-12">
                 <div class="row justify-content-center">
                     <div class="col-4 text-center">
                         <div class="video-container">
-                            <video src="./assets/01.mp4" controls></video>
+                            <iframe
+                                src="https://drive.google.com/file/d/1jH4Bx-4LgQ35INKzXWgS_VDTgEydzbkK/preview"></iframe>
                         </div>
-                        <h5>Video title 1</h5>
+                        <h5>Energyscape – Mint Energy Conclave</h5>
                     </div>
                     <div class="col-4 text-center">
                         <div class="video-container">
-                            <video src="./assets/02.mp4" controls></video>
+                            <iframe
+                                src="https://drive.google.com/file/d/1UyJevF0mc2nIYXz91W8XUgi6iY1teCaK/preview"></iframe>
                         </div>
-                        <h5>Video title 2</h5>
+                        <h5>Mint India Investment Summit
+                        </h5>
                     </div>
                     <div class="col-4 text-center">
                         <div class="video-container">
-                            <video src="./assets/03.mp4" controls></video>
+                            <iframe
+                                src="https://drive.google.com/file/d/12K06PS_zHC44JP3UorjOzkdMMSa99yD_/preview"></iframe>
                         </div>
-                        <h5>Video title 3</h5>
+                        <h5>Mint India Investment Summit</h5>
                     </div>
                 </div>
             </div>
@@ -233,24 +249,7 @@
     <div class="modal fade" id="partner" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
 
-
-
-                <!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-                <script>
-                    hbspt.forms.create({
-                        portalId: "6984830",
-                        formId: "0a63204f-dae0-4c46-899b-ef830b605bee",
-                        target: '#exampleModal'
-                    });
-                </script>
-
-
-
-            </div>
         </div>
     </div>
 
