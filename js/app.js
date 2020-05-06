@@ -27,6 +27,19 @@ var p = new Vue({
 
 
 
+$(document).ready(function () {
+    $('.autoplay').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        loop: true,
+        infinite: true,
+        arrows: true
+    });
+
+});
+
+
+
 $('.slider-wrapper').each(function () {
     $(this).slick({
         autoplay: true,
