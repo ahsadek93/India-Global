@@ -1,5 +1,5 @@
 $color-primary: #f79210;
-$color-primary-light: #ffc34b;
+$color-primary-light: rgba(247, 146, 16, .1);
 $enable-responsive-font-sizes: true !important;
 
 
@@ -193,4 +193,8 @@ body {
 .slick-arrow,
 .slick-arrow::before {
     color: $color-primary;
+}
+
+.container-fluid {
+    background-color: $color-primary-light !important;
 }

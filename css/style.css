@@ -5,7 +5,7 @@ body {
   overflow-x: hidden; }
 
 .bg-primary-light {
-  background-color: #ffc34b !important; }
+  background-color: rgba(247, 146, 16, 0.1) !important; }
 
 .text-primary {
   color: #f79210 !important; }
@@ -125,5 +125,8 @@ body {
 .slick-arrow,
 .slick-arrow::before {
   color: #f79210; }
+
+.container-fluid {
+  background-color: rgba(247, 146, 16, 0.1) !important; }
 
 /*# sourceMappingURL=style.css.map */
