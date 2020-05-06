@@ -16,10 +16,11 @@ body {
   top: 0;
   left: 0; }
 
-.slider-img {
+.carousel-item {
   object-fit: cover;
   height: 100vh !important;
-  width: 100vw !important; }
+  width: 100vw !important;
+  background-color: black !important; }
 
 .carousel-item::after {
   content: '\A';
