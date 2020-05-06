@@ -108,11 +108,11 @@ body {
 }
 
 .nav-link {
-    color: white !important;
+    color: $color-primary !important;
 
     &:hover,
     &:focus {
-        color: $color-primary !important;
+        color: white !important;
     }
 }
 

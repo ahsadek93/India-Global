@@ -74,9 +74,9 @@ body {
   position: absolute; }
 
 .nav-link {
-  color: white !important; }
+  color: #f79210 !important; }
   .nav-link:hover, .nav-link:focus {
-    color: #f79210 !important; }
+    color: white !important; }
 
 .border-primary {
   border-color: #f79210 !important; }
