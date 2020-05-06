@@ -147,7 +147,7 @@ var m = new Vue({
                 {
                     id: 'm12',
                     name: 'Lev Mass',
-                    url: './assets/photos/11.jpg',
+                    url: './assets/photos/12.jpg',
                     title: 'California-based serial entrepreneur, investor and mentor',
                     text: 'Silicon Valley perspective on opportunities for Indian deep tech startups '
                 },
