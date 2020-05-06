@@ -68,6 +68,16 @@ body {
   .btn-primary:hover, .btn-primary:focus {
     background-color: #f79210 !important;
     color: black; }
+  .btn-primary-filled {
+    border: 1px solid white !important;
+    background-color: #f79210;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 10px; }
+    .btn-primary-filled:hover, .btn-primary-filled:focus {
+      border: 1px solid #f79210 !important;
+      background-color: white !important;
+      color: #f79210; }
 
 .navbar {
   z-index: 1000;
