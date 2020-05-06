@@ -154,7 +154,7 @@ body {
   cursor: pointer; }
 
 .hbspt-form form {
-  background-color: white;
-  padding: 25px 25px; }
+  background-color: white !important;
+  padding: 25px 25px !important; }
 
 /*# sourceMappingURL=style.css.map */
