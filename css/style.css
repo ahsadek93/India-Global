@@ -34,21 +34,6 @@ body {
   transition: all 0.5s;
   -webkit-transition: all 0.5s; }
 
-.carousel-caption {
-  width: 100%;
-  height: fit-content;
-  right: 0;
-  left: 0;
-  top: 20%;
-  z-index: 1000; }
-
-@media (min-width: 500px) {
-  .carousel-caption {
-    width: 100%;
-    right: 0;
-    left: 0;
-    top: 50%;
-    z-index: 1000; } }
 .slider-margin {
   margin-top: 100vh; }
 
@@ -161,5 +146,32 @@ body {
 .form-style {
   background-color: white !important;
   padding: 25px 25px !important; }
+
+.carousel-caption {
+  height: fit-content;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 15%;
+  z-index: 1000; }
+
+.display-3 {
+  font-size: 2.5rem !important; }
+
+@media (min-width: 375px) {
+  .carousel-caption {
+    top: 15%; }
+
+  .display-3 {
+    font-size: 3rem !important; } }
+@media (min-width: 450px) {
+  .carousel-caption {
+    top: 30%; } }
+@media (min-width: 576px) {
+  .display-3 {
+    font-size: 3.5rem !important; } }
+@media (min-width: 992px) {
+  .display-3 {
+    font-size: 4rem !important; } }
 
 /*# sourceMappingURL=style.css.map */
