@@ -98,9 +98,9 @@ var m = new Vue({
                 },
                 {
                     id: 'm09',
-                    name: 'Shridhar Marri , Satish Medapati , and Raghu Ravinutala',
+                    name: 'Raghu Ravinutala and Satish Medapati ',
                     url: './assets/photos/09.jpg',
-                    title: 'Co-founder, Senseforth - Co-founder, Intentico - CEO and co-founder of Yellow Messenger',
+                    title: 'CEO and co-founder of Yellow Messenger - Co-founder, Intentico',
                     text: 'The rise of conversational AI in the wake of social distancing',
                     soloPic: false
                 },

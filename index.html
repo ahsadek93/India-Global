@@ -137,7 +137,8 @@
                 <template v-for="member in memberList">
                     <a data-toggle="modal" v-bind:data-target="'#' + member.id"
                         class="col-12 col-md-3 p-2 my-2 border border-muted pointer">
-                        <img v-bind:src="member.url" class="img-fluid card-img-top">
+                        <img v-bind:src="member.url" class="img-fluid card-img-top"
+                            v-bind:class="{'card-img-top-fill' : !member.soloPic}">
                         <div class="text-wrapper p-2">
                             <h4>{{member.name}} </h4>
                             <h6 class="text-primary">{{member.title}}</h6>
