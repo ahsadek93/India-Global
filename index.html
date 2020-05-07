@@ -254,6 +254,7 @@
         </div>
     </div>
     <!-- Modal -->
+
     <div class="modal fade" id="partner" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -339,37 +340,57 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row ">
-                            <div class="col-5 col-md">First name <span class="text-danger">*</span>
+                            <div class="col-12 text-right">
+                                <p v-if=" error.firstNameInvalid " class="text-danger p-0 m-0">First Name is required
+                                </p>
                             </div>
-                            <div class="col col-md-8"><input class="border border-primary w-100" type="text" required>
+                            <div class="col-5 col-md">First name<span class="text-danger">*</span></div>
+                            <div class="col col-md-8"><input v-model="formData.firstName"
+                                    class="border border-primary w-100" type="text" required>
                             </div>
-                            <div class="col-12 py-1"></div>
-                            <div class="col-5 col-md">Last name<span class="text-danger">*</span></div>
-                            <div class="col col-md-8"><input class="border border-primary w-100" type="text" required>
-                            </div>
-                            <div class="col-12 py-1"></div>
-                            <div class="col-12">Note: event details will be sent to the email address entered below.
-                            </div>
-                            <div class="col-12 py-1"></div>
+                            <div class="col-12 py-1 text-right">
+                                <p v-if=" error.lastNameInvalid " class="text-danger p-0 m-0">Last Name is required</p>
 
+                            </div>
+                            <div class="col-5 col-md">Last name<span class="text-danger">*</span></div>
+                            <div class="col col-md-8"><input v-model="formData.lastName"
+                                    class="border border-primary w-100" type="text" required>
+                            </div>
+                            <div class="col-12 py-1 text-right">
+                                <div class="col-12">Note: event details will be sent to the email address entered below.
+                                </div>
+
+                                <p v-if=" error.emailInvalid " class="text-danger p-0 m-0">Work Email is required</p>
+                            </div>
                             <div class="col-5 col-md">Work Email<span class="text-danger">*</span></div>
-                            <div class="col col-md-8"><input class="border border-primary w-100" type="email" required>
+                            <div class="col col-md-8"><input v-model="formData.email"
+                                    class="border border-primary w-100" type="email" required>
                             </div>
-                            <div class="col-12 py-1"></div>
+                            <div class="col-12 py-1 text-right">
+                                <p v-if=" error.phoneInvalid " class="text-danger p-0 m-0">Phone is required</p>
+                            </div>
                             <div class="col-5 col-md">Phone number<span class="text-danger">*</span></div>
-                            <div class="col col-md-8"><input class="border border-primary w-100" type="number" required>
+                            <div class="col col-md-8"><input v-model="formData.phone"
+                                    class="border border-primary w-100" type="number" required>
                             </div>
-                            <div class="col-12 py-1"></div>
+                            <div class="col-12 py-1 text-right">
+                                <p v-if=" error.companyInvalid " class="text-danger p-0 m-0">Company Name is required
+                                </p>
+                            </div>
                             <div class="col-5 col-md">Company name<span class="text-danger">*</span></div>
-                            <div class="col col-md-8"><input class="border border-primary w-100" type="text" required>
+                            <div class="col col-md-8"><input v-model="formData.company"
+                                    class="border border-primary w-100" type="text" required>
                             </div>
-                            <div class="col-12 py-1"></div>
+                            <div class="col-12 py-1 text-right">
+                                <p v-if=" error.jobTitleInvalid " class="text-danger p-0 m-0">Job Title is required</p>
+                            </div>
                             <div class="col-5 col-md">Job title<span class="text-danger">*</span></div>
-                            <div class="col col-md-8"><input class="border border-primary w-100" type="text" required>
+                            <div class="col col-md-8"><input v-model="formData.jobTitle"
+                                    class="border border-primary w-100" type="text" required>
                             </div>
                             <div class="col-12 py-1"></div>
                             <div class="col-12">
-                                <button class="btn btn-primary-filled">Download Details</button>
+                                <button class="btn btn-primary-filled" @click="checkForm()">Submit</button>
                             </div>
 
                         </div>
@@ -377,6 +398,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 
