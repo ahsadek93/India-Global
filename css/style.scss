@@ -193,29 +193,6 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-
-
-.slider-wrapper .slick-list,
-.slider-wrapper .slick-track {
-    width: 100%;
-    height: 30vw;
-}
-
-@media (max-width: 767px) {
-
-    .slider-wrapper .slick-list,
-    .slider-wrapper .slick-track {
-        width: 100%;
-        height: 100vw;
-    }
-}
-
-
-.slick-arrow,
-.slick-arrow::before {
-    color: $color-primary;
-}
-
 .container-colored {
     background-color: $color-primary-light !important;
 }
