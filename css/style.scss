@@ -242,10 +242,7 @@ body {
 }
 
 
-.form-style {
-    background-color: white !important;
-    padding: 25px 25px !important;
-}
+
 
 
 
@@ -259,31 +256,28 @@ body {
 
 }
 
-.display-3 {
-    font-size: 1.5rem !important;
-    font-weight: 500;
+h1 {
+    font-size: 2rem;
 }
 
-h5 {
-    font-weight: 200;
+h2 {
+    font-size: 1.5rem;
 }
 
+@media (min-width: 768px) {
 
-@media (min-width: 576px) {
-    .display-3 {
-        font-size: 2rem !important;
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
     }
 }
 
-@media (min-width: 992px) {
-    .display-3 {
-        font-size: 3.5rem !important;
-    }
 
-    h5 {
-        font-weight: 500;
-    }
-}
+
 
 
 input {
