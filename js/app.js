@@ -25,43 +25,6 @@ var p = new Vue({
 
 });
 
-/*
-
-$(document).ready(function () {
-
-    $('.slider-wrapper').each(function () {
-        $(this).slick({
-            autoplay: true,
-            autoplaySpeed: 10000,
-            arrows: false,
-            fade: true,
-            speed: Math.round(Math.random() * 5000) + 2000,
-            infinite: true,
-            cssEase: 'ease-in-out',
-            loop: true
-        })
-    })
-});
-
-
-$('.big-slider').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [{
-        breakpoint: 480,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            autoplay: true,
-            autoplaySpeed: 7000
-        }
-    }]
-
-})
-
-*/
 
 var m = new Vue({
     el: "#section-team",
@@ -168,4 +131,95 @@ var m = new Vue({
             ]
         }
     }
+})
+
+
+
+
+var par = new Vue({
+    el: '#partner',
+    data() {
+        return {
+            formData: {
+                firstName: null,
+                lastName: null,
+                email: null,
+                phone: null,
+                company: null,
+                jobTitle: null
+            },
+            error: {
+                firstNameInvalid: null,
+                lastNameInvalid: null,
+                emailInvalid: null,
+                phoneInvalid: null,
+                companyInvalid: null,
+                jobTitleInvalid: null,
+            }
+
+        }
+    },
+
+    methods: {
+
+        checkFirstName() {
+            if (this.formData.firstName && this.formData.firstName !== ' ') {
+                this.error.firstNameInvalid = false
+            } else {
+                this.error.firstNameInvalid = true
+            }
+        },
+        checkLastName() {
+            if (this.formData.lastName && this.formData.lastName !== ' ') {
+                this.error.lastNameInvalid = false
+            } else {
+                this.error.lastNameInvalid = true
+            }
+        },
+        checkEmail() {
+            if (this.formData.email && this.formData.email !== ' ') {
+                this.error.emailInvalid = false
+            } else {
+                this.error.emailInvalid = true
+            }
+        },
+
+        checkPhone() {
+            if (this.formData.phone && this.formData.phone !== ' ') {
+                this.error.phoneInvalid = false
+            } else {
+                this.error.phoneInvalid = true
+            }
+        },
+
+        checkCompany() {
+            if (this.formData.company && this.formData.company !== ' ') {
+                this.error.companyInvalid = false
+            } else {
+                this.error.companyInvalid = true
+            }
+        },
+
+        checkJobTitle() {
+            if (this.formData.jobTitle && this.formData.jobTitle !== ' ') {
+                this.error.jobTitleInvalid = false
+            } else {
+                this.error.jobTitleInvalid = true
+            }
+        },
+
+
+
+
+        checkForm() {
+            this.checkFirstName();
+            this.checkLastName();
+            this.checkEmail();
+            this.checkPhone();
+            this.checkCompany();
+            this.checkJobTitle();
+        },
+    }
+
+
 })

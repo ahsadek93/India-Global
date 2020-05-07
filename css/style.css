@@ -49,10 +49,14 @@ body {
   background-color: #f79210;
   color: black;
   padding: 10px 30px;
-  margin-top: 10px; }
-  .btn-primary:hover, .btn-primary:focus {
+  margin-top: 10px;
+  box-shadow: 0 0 0 0.2rem rgba(247, 146, 16, 0); }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:checked, .btn-primary:target {
     background-color: #f79210 !important;
-    color: black; }
+    color: black;
+    box-shadow: 0 0 0 0.2rem rgba(247, 146, 16, 0.5) !important; }
+  .btn-primary:hover {
+    box-shadow: 0 0 0 0.2rem rgba(247, 146, 16, 0); }
   .btn-primary-filled {
     border: 1px solid white !important;
     background-color: #f79210;
@@ -171,5 +175,8 @@ h5 {
 
   h5 {
     font-weight: 500; } }
+input:hover, input:focus, input:active, input:checked, input:target {
+  box-shadow: 0 0 0 0.2rem rgba(247, 146, 16, 0.5) !important;
+  outline-color: #f79210; }
 
 /*# sourceMappingURL=style.css.map */

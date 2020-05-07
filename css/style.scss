@@ -74,13 +74,25 @@ body {
     color: black;
     padding: 10px 30px;
     margin-top: 10px;
+    box-shadow: 0 0 0 0.2rem rgba(#f79210, 0);
+
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:active,
+    &:checked,
+    &:target {
 
         background-color: $color-primary !important;
         color: black;
+        box-shadow: 0 0 0 0.2rem rgba(#f79210, 0.5) !important;
     }
+
+    &:hover {
+        box-shadow: 0 0 0 0.2rem rgba($color-primary, 0);
+
+    }
+
 
 
     &-filled {
@@ -270,5 +282,19 @@ h5 {
 
     h5 {
         font-weight: 500;
+    }
+}
+
+
+input {
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:checked,
+    &:target {
+        box-shadow: 0 0 0 0.2rem rgba(#f79210, 0.5) !important;
+        outline-color: $color-primary;
+
     }
 }
